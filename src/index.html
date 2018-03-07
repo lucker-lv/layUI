@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <!--[if lt IE 9]>
+    <script src="https://cdn.staticfile.org/html5shiv/r29/html5.min.js"></script>
+    <script src="https://cdn.staticfile.org/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    <link rel="stylesheet" href="../layUI/css/layui.css">
+</head>
+
+<body>
+    <ul class="layui-nav layui-bg-molv" lay-filter="">
+        <li class="layui-nav-item">
+            <a href="">最新活动</a>
+        </li>
+        <li class="layui-nav-item layui-this">
+            <a href="">产品<span class="layui-badge">9</span>
+            </a>
+        </li>
+        <li class="layui-nav-item">
+            <a href="">
+                大数据<span class="layui-badge-dot"></span>
+            </a>
+        </li>
+        <li class="layui-nav-item">
+            <a href="javascript:;">解决方案</a>
+            <dl class="layui-nav-child">
+                <!-- 二级菜单 -->
+                <dd>
+                    <a href="">移动模块</a>
+                </dd>
+                <dd>
+                    <a href="">后台模版</a>
+                </dd>
+                <dd>
+                    <a href="">电商平台</a>
+                </dd>
+            </dl>
+        </li>
+        <li class="layui-nav-item">
+            <a href="">社区</a>
+        </li>
+        <li class="layui-nav-item">
+            <a href="">
+                <img src="http://t.cn/RCzsdCq" class="layui-nav-img">我</a>
+            <dl class="layui-nav-child">
+                <dd>
+                    <a href="javascript:;">修改信息</a>
+                </dd>
+                <dd>
+                    <a href="javascript:;">安全管理</a>
+                </dd>
+                <dd>
+                    <a href="javascript:;">退了</a>
+                </dd>
+            </dl>
+        </li>
+    </ul>
+
+    <script src="https://cdn.bootcss.com/jquery/1.11.0/jquery.min.js"></script>
+    <script src="../layUi/layui.js"></script>
+    <script>
+        layui.config({
+            base: '/src/js/' //假设这是你存放拓展模块的根目录
+        })
+        // .extend({ //设定模块别名
+        //     mymod: 'mymod', //如果 mymod.js 是在根目录，也可以不用设定别名
+        //     mod1: 'admin/mod1' //相对于上述 base 目录的子目录
+        // });
+        layui.use('index')
+    </script>
+</body>
+
+</html>
